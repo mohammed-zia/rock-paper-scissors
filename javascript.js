@@ -68,12 +68,14 @@ function playRound() {
 }
 
 
-
 function game(){
     try{
         wins = 0;
         losses = 0;
         ties = 0;
+        const smiley = String.fromCodePoint(0x1F601)
+        const robot = String.fromCodePoint(0x1F916)
+        const handshake = String.fromCodePoint(0x1F91D)
         for (let i = 0; i<5; i++){
             result = playRound()
             if (result.indexOf('Win') !== -1) {
@@ -87,15 +89,15 @@ function game(){
             }
         }
         if (wins > losses) {
-            console.log(":smiley: Human wins!")
+            console.log(smiley + " Human wins!")
         }
 
         else if (losses > wins) {
-            console.log("Machine wins!")
+            console.log(robot + " Machine wins!")
         }
 
         else {
-            console.log("It's a tie!")
+            console.log(handshake + " It's a tie!")
         }
         return console.log('After 5 games you won', wins, ', lost', losses, 'and tied', ties, '.')
     }
