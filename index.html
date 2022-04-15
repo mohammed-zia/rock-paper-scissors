@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="user-scalable=no" />
   <title>Rock Paper Scissors</title>
+  <script src="javascript.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script src="javascript.js"></script>
+  <div class="container">
+    <div class="title">
+      <h1>Rock Paper Scissors</h1>
+      <h2>You're playing against a highly trained AI machine*</h2>
+      <p>*It's completely random</p>
+      <h4>First to 5 points wins!</h4>
+    </div>
+    <div class="buttons">
+      <button id="rock">&#x1FAA8</button>
+      <button id="paper">&#x1F4C3</button>
+      <button id="scissors">✂️</button>
+    </div>
+    <div class="dispResults">
+      <h2>Results</h2>
+      <p id="playerSelect"></p>
+      <p id="compSelect"></p>
+      <p id="resultMsg"></p>
+      <p id="playerWinTotal"></p>
+      <p id="compWinTotal"></p>
+      <p id="tieTotal"></p>
+      <p id="games"></p>
+    </div>
+  </div>
 </body>
 </html>

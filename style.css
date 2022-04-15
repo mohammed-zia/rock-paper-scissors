@@ -1,0 +1,175 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+    min-height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    align-items: center;
+    color: #b22577;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.title h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.title p {
+    text-align: center;
+    margin-top: 0rem;
+    font-size: 10px;
+}
+
+.title h4 {
+    text-align: center;
+    font-size: 22px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    /* margin: 0 2rem; */
+}
+
+.buttons button {
+    background: #000000;
+    border-radius: 40px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    padding: 2rem 4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* min-width: 150px; */
+}
+
+.dispResults{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.dispResults h2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.dispResults #compSelect,#playerSelect {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dispResults p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.machineWon {
+    font-size: 34px;
+    color: red;
+    margin: 0rem;
+}
+
+.playerWon {
+    font-size: 34px;
+    color: green;
+    margin: 0rem;
+
+}
+
+#retry {
+    background: #000000;
+    border-radius: 40px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+@media screen and (min-width: 400px) {
+    .title h1 {
+        font-size: 80px;
+    }
+
+
+    .title h2 {
+        font-size: 60px;
+    }
+
+    .title p {
+        font-size: 23px;
+    }
+
+    .title h4 {
+        font-size: 45px;
+    }
+
+    .buttons button {
+        border-radius: 40px;
+        font-family: var(--font-family);
+        font-size: 50px;
+        line-height: 60px;
+        /* min-width: 150px; */
+    }
+
+    .dispResults h2 {
+        font-size: 58px;
+        font-weight: 800;
+    }
+    
+    .dispResults #compSelect,#playerSelect {
+        font-weight: bold;
+        font-size: 45px;
+    }
+    
+    .dispResults p{
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+    .machineWon {
+        font-size: 50px;
+        color: red;
+        margin: 0rem;
+    }
+    
+    .playerWon {
+        font-size: 50px;
+        color: green;
+        margin: 0rem;
+    }
+    #retry {
+        font-size: 36px;
+        padding: 1.5rem 3rem;
+    }
+
+}
