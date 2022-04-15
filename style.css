@@ -24,6 +24,7 @@ html {
     text-align: center;
     font-size: 48px;
     font-weight: 800;
+    margin: 0rem;
 }
 
 .title h2 {
@@ -115,61 +116,65 @@ html {
     min-width: 150px;
 }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 550px) {
     .title h1 {
-        font-size: 80px;
+        font-size: 35px;
+        margin: 0rem;
     }
 
 
     .title h2 {
-        font-size: 60px;
+        font-size: 20px;
     }
 
     .title p {
-        font-size: 23px;
+        font-size: 12px;
     }
 
     .title h4 {
-        font-size: 45px;
+        font-size: 20px;
+        margin-bottom: 0rem;
     }
 
     .buttons button {
         border-radius: 40px;
-        font-family: var(--font-family);
-        font-size: 50px;
-        line-height: 60px;
+        font-size: 30px;
+        line-height: 30px;
+        padding: 2rem;
+        max-width: 100%;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
         /* min-width: 150px; */
     }
 
     .dispResults h2 {
-        font-size: 58px;
+        font-size: 20px;
         font-weight: 800;
     }
     
     .dispResults #compSelect,#playerSelect {
         font-weight: bold;
-        font-size: 45px;
+        font-size: 15px;
     }
     
     .dispResults p{
-        font-size: 36px;
+        font-size: 12px;
         font-weight: bold;
     }
     
     .machineWon {
-        font-size: 50px;
-        color: red;
+        font-size: 20px;
+        color: maroon;
         margin: 0rem;
     }
     
     .playerWon {
-        font-size: 50px;
+        font-size: 20px;
         color: green;
         margin: 0rem;
     }
     #retry {
-        font-size: 36px;
-        padding: 1.5rem 3rem;
+        font-size: 20px;
     }
 
 }

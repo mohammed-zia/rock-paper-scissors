@@ -168,6 +168,8 @@ function gameOver(){
     const retry = document.querySelector('#retry');
     retry.addEventListener('click', () => {
         window.location.reload();
+    
     })
+    window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });  
 }
 
